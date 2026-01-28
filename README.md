@@ -76,33 +76,3 @@ get请求：1）url传参--->params
 如： data   对应的header为：  Content-Type:application/x-www-form-urlencoded;charset=UTF-8
     json   对应的header为：  Content-Type:application/json;charset=UTF-8
     files  文件提交          Content-type:multipart/form-data; charset=utf-8
-
-**4、注意事项**
-------------------------
- 1）首先安装本项目所需的依赖库，命令为：【pip install -i https://pypi.doubanio.com/simple -r F:\automaticAPI\pythonproject\requirements.txt】 ，F:\automaticAPI\pythonproject路径替换你自己的路径即可
- 2）环境配置，建议使用本地的python环境，当然也可以使用项目下的venv虚拟环境，但是虚拟环境的第三方库版本和你本地的python解释器版本会有不兼容的情况，遇到哪个第三方库报错就需要卸载在重装
- 配置方法请参考：https://app.yinxiang.com/fx/276ba8ce-63a6-410b-ac1f-509da376181c
- 3）如果运行后有报错，那就是python第三库版本与本框架中的第三库版本冲突导致，哪个报错，你就卸载哪个然后重新安装即可
- 4）本项目结构下的文件，除了data目录下的文件可以自由删除，其他文件均不可以删除，否则会报错无法运行
- 5）pytest.ini文件名为固定写法不可更改，里面内容不可以加#中文注释，会报错，实在要加请参考：https://blog.51cto.com/u_15688254/5391563
- 6）第三方库安装命令，使用镜像源：pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple/
- 7）环境部署常见错误请参考：https://app.yinxiang.com/fx/a74c2da8-1f76-4757-9467-5392889d0ad7
-
-
-**5、如果不想自己编写接口信息yaml文件，可以运行base目录下的new_testcase_tools.py文件，打开后填入相关参数**
-   可以先点击接口调试，确认接口没问题，再点击生成yaml文件
-    
-**6、根目录下的environment.xml、environment.properties是测试报告的显示环境配置**
---------------------
-1）可根据需要选择其中一种，建议使用xml格式，因为在报告中可显示中文，.properties格式在报告中中文会乱码
-2）里面内容可自定义编写，格式保持正确即可
-3）在执行pytest命令生成allure报告的时候，经常会加 --clean-alluredir参数，其功能即是清除之前创建的allure测试报告原始数据
-（会将测试报告原始数据文件夹下的文件全部清空），即此命令同样会将 environment.properties 文件删除。
-    ①为防止 environment.properties/environment.xml 文件被删掉，可以先把该目录放在项目根目录。
-    ②执行完run.py第一行代码后
-    ③将 environment.properties 文件再copy 到 allure测试报告原始数据目录（report/temp）。
-
-**7、allure测试报告**
----------------------------------------------
-1）执行完成后，allure测试报告没有生成
-2）请参考配置方法：https://app.yinxiang.com/fx/fd13ff11-369f-4b3b-bac9-c7ea18bd2f47

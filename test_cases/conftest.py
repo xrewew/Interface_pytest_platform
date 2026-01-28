@@ -18,17 +18,17 @@ from logging_conf.logging_config import logs
 """
 
 
-# @pytest.fixture(autouse=True)
-# def start_test_end():
-#     logs.info('-----------------接口测试开始---------------------')
-#     yield
-#     logs.info('-----------------接口测试结束---------------------')
+@pytest.fixture(scope='session', autouse=True)
+def start_test_end():
+    logs.info('-----------------接口测试开始---------------------')
+    yield
+    logs.info('-----------------接口测试结束---------------------')
 
 
 # @pytest.fixture(scope='session', autouse=True)
-def system_login():
-    params = get_yaml_data('test_cases/login/login.yaml')
-    BaseRequests().send_specification_yaml(params)
+# def system_login():
+#     params = get_yaml_data('test_cases/login/login.yaml')
+#     BaseRequests().send_specification_yaml(params)
 
 #
 # def pytest_terminal_summary(terminalreporter, exitstatus, config):
