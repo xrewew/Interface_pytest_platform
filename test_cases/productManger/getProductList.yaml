@@ -1,0 +1,17 @@
+- baseInfo:
+    api_name: 商品列表 #接口名称
+    url: /coupApply/cms/goodsList #请求地址
+    method: get
+    header:
+      Content-Type : application/x-www-form-urlencoded;charset=UTF-8
+      token : ${get_extract_data(product_id,1)}
+  testCase: #请求参数
+    - case_name: 获取商品列表
+      params: #使用表单提交要用data，json格式提交就用json方式，get方法只能使用parmas
+        msgType: getHandsetListOfCust
+        page : 1
+        size : 20
+      validation: #断言
+        - contains: {'error_code': '0000'}
+      extract_list: #需要提取返回值的内容，比如这里要提取商品id列表
+        goodsId : $.goodsList[*].goodsId

@@ -1,0 +1,77 @@
+INFO - 2026-01-25 15:07:30,161 - readyaml.py:65 -[readyaml:<module>] - 这是一条info日志
+INFO - 2026-01-25 15:09:34,443 - readyaml.py:35 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-25 15:10:07,871 - readyaml.py:35 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-25 15:10:07,873 - readyaml.py:66 -[readyaml:<module>] - [{'baseInfo': {'api_name': '用户登录', 'url': '/dar/user/login', 'method': 'post', 'header': {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}}, 'testCase': [{'case_name': '用户名和密码正确登录验证', 'data': {'user_name': 'test01', 'passwd': 'admin123'}, 'validation': [{'contains': {'error_code': 'none'}}, {'eq': {'msg': '登录成功1111'}}, {'ne': {'msg': '登录失败'}}, {'db': 'select * from tb where id = 3'}], 'extract': {'token': '$.token'}}]}]
+INFO - 2026-01-25 15:13:07,971 - readyaml.py:35 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/logins.yaml
+INFO - 2026-01-25 15:13:07,971 - readyaml.py:38 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/logins.yaml不存在
+INFO - 2026-01-25 15:13:07,971 - readyaml.py:66 -[readyaml:<module>] - []
+INFO - 2026-01-25 15:13:57,258 - readyaml.py:35 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/logins.yaml
+INFO - 2026-01-25 15:13:57,259 - readyaml.py:38 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/logins.yaml不存在
+INFO - 2026-01-25 15:13:57,259 - readyaml.py:66 -[readyaml:<module>] - 读取到的yaml数据为：[]
+INFO - 2026-01-25 15:15:44,952 - readyaml.py:35 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/logins.yaml
+INFO - 2026-01-25 15:15:44,952 - readyaml.py:38 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/logins.yaml不存在
+INFO - 2026-01-25 15:15:44,952 - readyaml.py:66 -[readyaml:<module>] - 读取到的yaml数据为：[]
+INFO - 2026-01-25 15:47:48,038 - readyaml.py:27 -[readyaml:write_yaml] - yaml文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\extract.yaml创建成功
+INFO - 2026-01-25 15:50:04,914 - readyaml.py:25 -[readyaml:write_yaml] - C:\Users\Xie-Xixin\Desktop\python\interface_pytest\extract.yaml
+INFO - 2026-01-25 15:50:04,914 - readyaml.py:28 -[readyaml:write_yaml] - yaml文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\extract.yaml创建成功
+INFO - 2026-01-25 15:50:46,633 - readyaml.py:25 -[readyaml:write_yaml] - C:\Users\Xie-Xixin\Desktop\python\interface_pytest\extract.yaml
+INFO - 2026-01-25 15:50:46,633 - readyaml.py:28 -[readyaml:write_yaml] - yaml文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\extract.yaml创建成功
+INFO - 2026-01-25 16:02:36,875 - readyaml.py:28 -[readyaml:write_yaml] - yaml文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\extract.yaml创建成功
+INFO - 2026-01-25 16:03:56,824 - readyaml.py:28 -[readyaml:write_yaml] - yaml文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml创建成功
+INFO - 2026-01-25 16:21:37,611 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：1
+INFO - 2026-01-25 16:21:52,982 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为'int' object has no attribute 'get'
+INFO - 2026-01-25 16:21:52,983 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：None
+INFO - 2026-01-25 16:23:10,142 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:'int' object has no attribute 'get'
+INFO - 2026-01-25 16:23:10,142 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：None
+INFO - 2026-01-25 16:23:59,219 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：(1, ['b'])
+INFO - 2026-01-25 16:24:30,186 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：(1, 'b')
+INFO - 2026-01-25 16:24:49,619 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：(1, 2)
+INFO - 2026-01-25 16:26:03,951 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：None
+INFO - 2026-01-25 16:26:18,239 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：('3123213129dsa9d894793279df79874936dfyfh12984y98fwdfw', '2312312312321312dxadasdad67ada8sbd6as8das68a')
+INFO - 2026-01-25 16:26:39,843 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：3123213129dsa9d894793279df79874936dfyfh12984y98fwdfw
+INFO - 2026-01-25 16:29:12,394 - readyaml.py:126 -[readyaml:<module>] - 读取到的yaml数据为：3123213129dsa9d894793279df79874936dfyfh12984y98fwdfw
+INFO - 2026-01-25 16:45:23,143 - api_keys.py:60 -[api_keys:run_main] - 接口名称：登录接口
+INFO - 2026-01-25 16:45:23,143 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-25 16:45:23,143 - api_keys.py:62 -[api_keys:run_main] - 用例名称：登录接口
+INFO - 2026-01-25 16:45:23,143 - api_keys.py:63 -[api_keys:run_main] - 请求头：None
+INFO - 2026-01-25 16:45:23,143 - api_keys.py:64 -[api_keys:run_main] - 请求方法：POST
+INFO - 2026-01-25 16:45:23,143 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-25 16:45:23,143 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+ERROR - 2026-01-25 16:45:25,168 - api_keys.py:33 -[api_keys:send_request] - 接口链接服务器异常！
+INFO - 2026-01-25 16:45:53,506 - api_keys.py:60 -[api_keys:run_main] - 接口名称：登录接口
+INFO - 2026-01-25 16:45:53,506 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-25 16:45:53,506 - api_keys.py:62 -[api_keys:run_main] - 用例名称：登录接口
+INFO - 2026-01-25 16:45:53,506 - api_keys.py:63 -[api_keys:run_main] - 请求头：None
+INFO - 2026-01-25 16:45:53,506 - api_keys.py:64 -[api_keys:run_main] - 请求方法：POST
+INFO - 2026-01-25 16:45:53,506 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-25 16:45:53,506 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-25 16:45:53,512 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTMzMDc1MywianRpIjoiMTNmZjNiNzQtNmQ3ZC00MjYyLThjOTAtNzUzZDI5ZThjOGU5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTMzMDc1MywiZXhwIjoxNzY5MzMxNjUzfQ.NoUL304PdgEvs8DnbuFTyJGeUyQRnziwsr_AbTg4t68'}}
+INFO - 2026-01-25 16:45:53,512 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:<Response [200]>
+INFO - 2026-01-25 16:46:37,593 - api_keys.py:60 -[api_keys:run_main] - 接口名称：登录接口
+INFO - 2026-01-25 16:46:37,593 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-25 16:46:37,593 - api_keys.py:62 -[api_keys:run_main] - 用例名称：登录接口
+INFO - 2026-01-25 16:46:37,593 - api_keys.py:63 -[api_keys:run_main] - 请求头：None
+INFO - 2026-01-25 16:46:37,593 - api_keys.py:64 -[api_keys:run_main] - 请求方法：POST
+INFO - 2026-01-25 16:46:37,593 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-25 16:46:37,593 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-25 16:46:37,597 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTMzMDc5NywianRpIjoiYTk0ZGU1MjEtZjQxZC00NzMwLWE5MzItODEyMDQ0YWFkNjFkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTMzMDc5NywiZXhwIjoxNzY5MzMxNjk3fQ.6VgWwv0x4f4-8XG31vXbWi0P6NzSvUS7FknZwab9hJs'}}
+INFO - 2026-01-25 16:46:37,597 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"6140913758128971280","token":"F7C5cFF2AbFb93F56EB11da0cffe1","userId":"3766301437915979653"}
+
+INFO - 2026-01-25 16:52:58,878 - api_keys.py:60 -[api_keys:run_main] - 接口名称：登录接口
+INFO - 2026-01-25 16:52:58,878 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-25 16:52:58,878 - api_keys.py:62 -[api_keys:run_main] - 用例名称：登录接口
+INFO - 2026-01-25 16:52:58,878 - api_keys.py:63 -[api_keys:run_main] - 请求头：None
+INFO - 2026-01-25 16:52:58,878 - api_keys.py:64 -[api_keys:run_main] - 请求方法：POST
+INFO - 2026-01-25 16:52:58,879 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-25 16:52:58,879 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-25 16:52:58,883 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTMzMTE3OCwianRpIjoiOGNiNGQwNzEtY2I4Mi00YzgyLThmM2YtNjg2M2U3MzNkY2I2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTMzMTE3OCwiZXhwIjoxNzY5MzMyMDc4fQ.DGI2_MKufSzbaVR6MCFpapTfleHC6JhoYp1TXHpOZN8'}}
+INFO - 2026-01-25 16:52:58,883 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"57BA9A006b0faEBb047326BBD481a","userId":"3766301437915979653"}
+
+ERROR - 2026-01-25 17:14:08,391 - operationConfig.py:21 -[operationConfig:__init__] - 读取配置文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:File contains no section headers.
+file: 'C:\\Users\\Xie-Xixin\\Desktop\\python\\interface_pytest\\data\\extract.yaml', line: 1
+'Cookie:\n'
+ERROR - 2026-01-25 17:14:08,391 - operationConfig.py:36 -[operationConfig:get_section_for_data] - No section: 'api_envi'
+ERROR - 2026-01-25 17:14:28,625 - operationConfig.py:21 -[operationConfig:__init__] - 读取配置文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:File contains no section headers.
+file: 'C:\\Users\\Xie-Xixin\\Desktop\\python\\interface_pytest\\data\\extract.yaml', line: 1
+'Cookie:\n'
+ERROR - 2026-01-25 17:14:28,625 - operationConfig.py:36 -[operationConfig:get_section_for_data] - No section: 'api_envi'

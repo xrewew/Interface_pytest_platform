@@ -1,0 +1,31 @@
+#yaml是一种非常简介的非标记的语言，是一种人类可获取的数据序列化格式，通常用于配置文件、数据交换、数据存储。目的是i易于于都和编写。yaml的语法是基于缩进来表示数据结构，而不是像XML或JSON那样使用
+#yaml语言特点：1.大小写敏感 2.使用缩进表示层级关系 3.缩进时不允许使用TAB键位 4.缩进的空格数目不重要，只要相同层数的元素左侧对齐即可
+#键值对：key: value
+#嵌套结构：parent:
+#               case1: 有效登录
+#               case2: 无效登录
+#列表模式：- data1：
+#注释#
+- baseInfo:
+    api_name: 用户登录 #接口名称
+    url: /dar/user/login #请求地址
+    method: post
+    header:
+      Content-Type : application/x-www-form-urlencoded;charset=UTF-8
+      token : ${get_extract_data(product_id,1)}
+  testCase: #请求参数
+    - case_name: 用户名和密码正确登录验证
+      data: #使用表单提交要用data，json格式提交就用json方式，get方法只能使用parmas
+        user_name: test01
+        passwd: admin123
+      validation: #断言
+        - contains: {'msg_code': 200} #包含模式
+        - eq : {'msg': '登录成功'} #相等模式
+        - ne : {'msg':'登录失败'} #不相等断言
+#        - db : select * from tb where id = 3 #数据库断言
+      extract:
+        token : $.token  #json提取器方式提取
+#        token: '"token":"(.*?)"'
+
+
+

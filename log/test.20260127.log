@@ -1,0 +1,393 @@
+DEBUG - 2026-01-27 14:08:58,454 - apiutil.py:134 -[apiutil:extract_data] - 正则表达式提取到的token参数：{'user_id': '123456'}
+INFO - 2026-01-27 14:50:58,055 - apiutil.py:144 -[apiutil:extract_data] - json提取到的参数为：{'token': '123456'}
+INFO - 2026-01-27 15:17:04,245 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\testcase/login/login.yaml
+INFO - 2026-01-27 15:17:04,245 - readyaml.py:94 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\testcase/login/login.yaml不存在
+INFO - 2026-01-27 15:20:24,992 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\testcase/login/login.yaml
+INFO - 2026-01-27 15:20:24,992 - readyaml.py:94 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\testcase/login/login.yaml不存在
+INFO - 2026-01-27 15:23:33,516 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：/testcase/login/login.yaml
+INFO - 2026-01-27 15:23:33,517 - readyaml.py:94 -[readyaml:get_yaml_data] - 警告：当前文件/testcase/login/login.yaml不存在
+INFO - 2026-01-27 15:23:59,108 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\testcase/login/login.yaml
+INFO - 2026-01-27 15:23:59,109 - readyaml.py:94 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\testcase/login/login.yaml不存在
+INFO - 2026-01-27 15:24:51,264 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\login.yaml
+INFO - 2026-01-27 15:24:51,264 - readyaml.py:94 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\login.yaml不存在
+INFO - 2026-01-27 15:25:21,033 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\login/login.yaml
+INFO - 2026-01-27 15:25:21,033 - readyaml.py:94 -[readyaml:get_yaml_data] - 警告：当前文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\login/login.yaml不存在
+INFO - 2026-01-27 15:25:40,857 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+ERROR - 2026-01-27 15:25:40,864 - apiutil.py:110 -[apiutil:send_specification_yaml] - 接口名称：用户登录，发生异常：'testcases'
+INFO - 2026-01-27 15:28:11,901 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+ERROR - 2026-01-27 15:28:11,909 - apiutil.py:110 -[apiutil:send_specification_yaml] - 接口名称：用户登录，发生异常：'testcases'
+INFO - 2026-01-27 15:32:03,087 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:32:03,094 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:32:03,094 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:32:03,094 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:32:03,094 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:32:03,094 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:32:03,094 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:32:03,095 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'cookie': None, 'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+ERROR - 2026-01-27 15:32:03,095 - apiutil.py:110 -[apiutil:send_specification_yaml] - 接口名称：用户登录，发生异常：Session.request() got an unexpected keyword argument 'cookie'
+INFO - 2026-01-27 15:32:48,008 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:32:48,015 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:32:48,015 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:32:48,015 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:32:48,015 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:32:48,015 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:32:48,015 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:32:48,016 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'cookie': None, 'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+ERROR - 2026-01-27 15:32:48,016 - apiutil.py:110 -[apiutil:send_specification_yaml] - 接口名称：用户登录，发生异常：Session.request() got an unexpected keyword argument 'cookie'
+INFO - 2026-01-27 15:34:19,139 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:34:19,146 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:34:19,146 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:34:19,146 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:34:19,146 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:34:19,146 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:34:19,146 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:34:19,146 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:34:19,153 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTQ5OTI1OSwianRpIjoiOGFhZjliZjQtZGRmNi00NjhjLTkyMzQtYjIxN2UyZDY2MTZlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTQ5OTI1OSwiZXhwIjoxNzY5NTAwMTU5fQ.SUcIeoVLypHYZtI2PDVn2Ihx04ZxUxfXS0fLt55lE_w'}}
+INFO - 2026-01-27 15:34:19,153 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"82BDa6bCda88574d388FFFA61C6bd","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:34:19,154 - apiutil.py:144 -[apiutil:extract_data] - json提取到的参数为：{'token': '82BDa6bCda88574d388FFFA61C6bd'}
+INFO - 2026-01-27 15:45:23,310 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:45:23,318 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:45:23,318 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:45:23,318 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:45:23,318 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:45:23,318 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:45:23,318 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:45:23,319 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:45:23,323 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTQ5OTkyMywianRpIjoiN2ZjNjBmMGItNmUwMS00NTFjLWEzZmEtZTc4YTRiYjJkMzkxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTQ5OTkyMywiZXhwIjoxNzY5NTAwODIzfQ.lcR6sMdxcF5fB22EUIO8UmHcsENIdGi-gPZmzAbMH9c'}}
+INFO - 2026-01-27 15:45:23,323 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"773668418E0CEbBaD689FFC85155e","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:45:23,324 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': '773668418E0CEbBaD689FFC85155e'}
+INFO - 2026-01-27 15:45:48,469 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:45:48,475 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:45:48,476 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:45:48,476 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:45:48,476 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:45:48,476 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:45:48,476 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:45:48,476 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:45:48,480 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTQ5OTk0OCwianRpIjoiMjdiNjk2MzItOWNjOS00YTZjLTk1ZmItMTU5M2NjMjk5ODc2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTQ5OTk0OCwiZXhwIjoxNzY5NTAwODQ4fQ.yOppwHXVu56JoLjl_saEU0-RzzvZ3m_SUW_jpgAHUyg'}}
+INFO - 2026-01-27 15:45:48,480 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"6140913758128971280","token":"E50CebCe3AaB7BCD4e82a34164dbB","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:45:48,481 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'E50CebCe3AaB7BCD4e82a34164dbB'}
+INFO - 2026-01-27 15:46:27,361 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:46:27,367 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:46:27,367 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:46:27,367 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:46:27,368 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:46:27,368 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:46:27,368 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:46:27,368 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:46:27,372 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTQ5OTk4NywianRpIjoiYWNkZmNmYzItNGUzMi00YjkzLTlkMTctNzFmZjQ3NzcyNzUyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTQ5OTk4NywiZXhwIjoxNzY5NTAwODg3fQ.NlKN-29SVO0UuAgVxuV6L-slpnL8zeuBZQdlN8YyKCY'}}
+INFO - 2026-01-27 15:46:27,372 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"ffa970ade4cCDDE8e99c7BD80AdD9","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:46:27,373 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'ffa970ade4cCDDE8e99c7BD80AdD9'}
+INFO - 2026-01-27 15:47:44,841 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:47:44,848 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:47:44,848 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:47:44,848 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:47:44,848 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:47:44,848 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:47:44,848 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:47:44,848 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:47:44,853 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMDA2NCwianRpIjoiZDk1NzY3ZTItZTI5ZC00OTkyLTlkYWEtNDUzYzQzYWM3NWVmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMDA2NCwiZXhwIjoxNzY5NTAwOTY0fQ.4NlYxTaWeo1bv1PsclNuBfgbcB7H_DYO0Bro_tEMyvk'}}
+INFO - 2026-01-27 15:47:44,853 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"6140913758128971280","token":"A6dCDEB756C08E7e7cdbEAdbfcDC5","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:47:44,854 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'A6dCDEB756C08E7e7cdbEAdbfcDC5'}
+INFO - 2026-01-27 15:48:17,312 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:48:17,319 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:48:17,320 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:48:17,320 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:48:17,320 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:48:17,320 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:48:17,320 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:48:17,320 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:48:17,324 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMDA5NywianRpIjoiNWU1MTkwMDctN2I2Ni00ODY0LTk3OGQtODljOTIzOTkwNDgyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMDA5NywiZXhwIjoxNzY5NTAwOTk3fQ.QRC3aRr6zgeCt4AraWOfvf8xDrA9GTpUfrjTJOquo9o'}}
+INFO - 2026-01-27 15:48:17,325 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"6C08E4ad9Bc4fFfA50d0FBabA2A94","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:48:17,326 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': '6C08E4ad9Bc4fFfA50d0FBabA2A94'}
+INFO - 2026-01-27 15:52:19,033 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:52:19,039 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:52:19,039 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:52:19,039 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:52:19,040 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:52:19,040 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:52:19,040 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:52:19,040 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:52:19,045 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMDMzOSwianRpIjoiNDBiMjBjNDgtNzk4MC00NTZiLWIyODUtOWVlZTFmYjBjYWY0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMDMzOSwiZXhwIjoxNzY5NTAxMjM5fQ.JtuZrrirxUN4M130Nol5-JUg3Xj0TZTuJQh29w1jyTQ'}}
+INFO - 2026-01-27 15:52:19,045 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"A3F3FE816EBFFF01eADff4Ed0FEFb","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:52:19,046 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'A3F3FE816EBFFF01eADff4Ed0FEFb'}
+INFO - 2026-01-27 15:52:54,595 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:52:54,601 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:52:54,601 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:52:54,601 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:52:54,601 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:52:54,601 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:52:54,601 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:52:54,601 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:52:54,606 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMDM3NCwianRpIjoiYzA4ZWZiMDUtZGJiYS00OTQ2LTgzM2ItMjcxYTYxMTg0YmQ0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMDM3NCwiZXhwIjoxNzY5NTAxMjc0fQ.0g2d97DjLXNog80O07LaX5WzBFiftYNX9nus1p9topM'}}
+INFO - 2026-01-27 15:52:54,606 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"2E08cEBbAe06ff4adE64Fe616cF11","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:52:54,607 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': '2E08cEBbAe06ff4adE64Fe616cF11'}
+INFO - 2026-01-27 15:54:44,429 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:54:44,436 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:54:44,436 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:54:44,436 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:54:44,436 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:54:44,436 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:54:44,436 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:54:44,436 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:54:44,441 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMDQ4NCwianRpIjoiMjRmZTlkOGUtNjYwZi00Y2MyLWIzZGYtZjdkMDA5YzEwY2M1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMDQ4NCwiZXhwIjoxNzY5NTAxMzg0fQ.ri-PK3rj3Z-I_GwPr8Fpd5GUHmcjDOYN6a-nkiPT_p8'}}
+INFO - 2026-01-27 15:54:44,441 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"6140913758128971280","token":"9626FbADFda3E05a0AdF7CDDcF8f5","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:54:44,442 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': '9626FbADFda3E05a0AdF7CDDcF8f5'}
+INFO - 2026-01-27 15:56:59,035 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:56:59,042 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:56:59,042 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:56:59,042 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:56:59,042 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:56:59,042 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:56:59,043 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:56:59,043 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:56:59,047 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMDYxOSwianRpIjoiYmJjOTQ1YmYtMzBhNi00MDYxLWFjMWItNjhiOTAyZjc1ZWQ3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMDYxOSwiZXhwIjoxNzY5NTAxNTE5fQ.zWfdj1PLCtk1m-JVwMprZM_VEzXE_fOZLcy_ZzPIvJM'}}
+INFO - 2026-01-27 15:56:59,047 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"6140913758128971280","token":"F7E08a17eCbB6e276255dbA7cc1Ad","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:56:59,048 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'F7E08a17eCbB6e276255dbA7cc1Ad'}
+INFO - 2026-01-27 15:57:27,166 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 15:57:27,174 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 15:57:27,174 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 15:57:27,174 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 15:57:27,174 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 15:57:27,174 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 15:57:27,174 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 15:57:27,174 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 15:57:27,179 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMDY0NywianRpIjoiMzcwMDFkYTQtZTM5My00MzhjLTliMWItNzdmMWU0OGQ0YTNjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMDY0NywiZXhwIjoxNzY5NTAxNTQ3fQ.9Vs71yQvLzqResifjF2zlIH_8NAIeGwL_NMhFePDeTA'}}
+INFO - 2026-01-27 15:57:27,179 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"fdbBeF8ACDdE3C365ABF6Ed36a8dA","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 15:57:27,180 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'fdbBeF8ACDdE3C365ABF6Ed36a8dA'}
+INFO - 2026-01-27 16:04:31,594 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases\login\login.yaml
+INFO - 2026-01-27 16:04:31,600 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 16:04:31,601 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 16:04:31,601 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 16:04:31,601 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 16:04:31,601 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 16:04:31,601 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 16:04:31,601 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 16:04:31,605 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMTA3MSwianRpIjoiNmVlMjhjNjItZjdhMC00YmJkLTk1ZGItNjQ5NGQyMWI5OWI4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMTA3MSwiZXhwIjoxNzY5NTAxOTcxfQ.96imNWaBWqprDWSPBPIjc9lwflXN11UXoMu2IJhvlho'}}
+INFO - 2026-01-27 16:04:31,606 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"57F89b8eBBeFaDEa770Bbd0cAa41c","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 16:04:31,606 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': '57F89b8eBBeFaDEa770Bbd0cAa41c'}
+INFO - 2026-01-27 16:21:21,983 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:21:21,988 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 16:21:21,988 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 16:21:21,988 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 16:21:21,988 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 16:21:21,988 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 16:21:21,989 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 16:21:21,989 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 16:21:21,993 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMjA4MSwianRpIjoiODMwZjYxNjctYmEyZi00MGUxLTljYWUtNGIwODg2NTk2NDgzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMjA4MSwiZXhwIjoxNzY5NTAyOTgxfQ.gV2K3IRvsAa7M_TC_rwye-rAe5Vf0p7FyYJ4GYgcEG4'}}
+INFO - 2026-01-27 16:21:21,993 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"6b1dE1Da54643FFf4F0Be21719Eda","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 16:21:21,993 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': '6b1dE1Da54643FFf4F0Be21719Eda'}
+INFO - 2026-01-27 16:21:38,631 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:21:38,638 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 16:21:38,639 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 16:21:38,639 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 16:21:38,639 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 16:21:38,639 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 16:21:38,639 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 16:21:38,640 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 16:21:38,643 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMjA5OCwianRpIjoiMTg1Nzg0NDgtYmY4MS00N2FiLWFmNTktM2UwZDhlNWJlNDM5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMjA5OCwiZXhwIjoxNzY5NTAyOTk4fQ.wdYZlRnphN2GOl17rTsiZN8FfqK0p5E5xFL5QBk0yPs'}}
+INFO - 2026-01-27 16:21:38,644 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"aEC7f00B69114efcDF2F345dF3d23","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 16:21:38,644 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'aEC7f00B69114efcDF2F345dF3d23'}
+INFO - 2026-01-27 16:23:00,890 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:23:00,897 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 16:23:00,897 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 16:23:00,897 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 16:23:00,897 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 16:23:00,898 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 16:23:00,898 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 16:23:00,898 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 16:23:00,902 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMjE4MCwianRpIjoiNzNmZDMzZDUtYzA3OS00MTA2LWE4MjUtMGRkMzYxZjEyN2EyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMjE4MCwiZXhwIjoxNzY5NTAzMDgwfQ.mfS6yspf9gTEy7HUmOp5TA237f-bTS9hdREad6WZCfA'}}
+INFO - 2026-01-27 16:23:00,902 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"C0f929c0C1C79a745665116Ec356E","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 16:23:00,903 - apiutil.py:143 -[apiutil:extract_data] - json提取到的参数为：{'token': 'C0f929c0C1C79a745665116Ec356E'}
+INFO - 2026-01-27 16:33:42,075 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:33:42,078 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:35:15,372 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:35:15,375 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:37:52,564 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:39:43,803 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:41:23,241 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:42:42,128 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:42:51,712 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:43:20,767 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 16:43:20,768 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：list indices must be integers or slices, not str
+INFO - 2026-01-27 16:44:14,301 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:44:23,102 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 16:45:02,677 - apiutil.py:110 -[apiutil:send_specification_yaml] - 接口发生异常：list indices must be integers or slices, not str
+INFO - 2026-01-27 16:46:47,881 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 16:46:47,882 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：string indices must be integers
+INFO - 2026-01-27 16:46:59,636 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 16:46:59,637 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：string indices must be integers
+INFO - 2026-01-27 16:51:13,409 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 16:51:13,413 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：'DbugTalk' object has no attribute 'get_params'
+INFO - 2026-01-27 16:51:52,610 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 16:51:52,615 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：'DbugTalk' object has no attribute 'get_params'
+INFO - 2026-01-27 16:52:57,178 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:52:57,183 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 16:52:57,183 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 16:52:57,183 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 16:52:57,183 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 16:52:57,183 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 16:52:57,184 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 16:52:57,184 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 16:52:57,188 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwMzk3NywianRpIjoiY2YyZDg4ZmYtZTVhZC00MWU4LTk4MWQtMGMwNzU1M2IwOWNkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwMzk3NywiZXhwIjoxNzY5NTA0ODc3fQ.jNgMgz5r-Wl-frMWhYZG523Si7bAK44fi2TOn4sPrZM'}}
+INFO - 2026-01-27 16:52:57,188 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"B8f2585417c9CAf628cDFc5C88E5C","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 16:52:57,189 - apiutil.py:142 -[apiutil:extract_data] - json提取到的参数为：{'token': 'B8f2585417c9CAf628cDFc5C88E5C'}
+INFO - 2026-01-27 16:55:51,538 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 16:55:51,544 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 16:55:51,544 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 16:55:51,544 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 16:55:51,544 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 16:55:51,545 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 16:55:51,545 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 16:55:51,546 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 16:55:51,549 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUwNDE1MSwianRpIjoiMTE3MWNhNTEtNjFlOC00OGExLTk3YTYtZDJlMTMyYzRiYzM4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUwNDE1MSwiZXhwIjoxNzY5NTA1MDUxfQ.MHccQK4kFVlliAmC8oKPmV6tm84SKtjmPmKu2vWwzBU'}}
+INFO - 2026-01-27 16:55:51,549 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"6140913758128971280","token":"d1D5d39B960b1DA14C4AC2f6AD8A3","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 16:55:51,550 - apiutil.py:142 -[apiutil:extract_data] - json提取到的参数为：{'token': 'd1D5d39B960b1DA14C4AC2f6AD8A3'}
+INFO - 2026-01-27 20:41:31,810 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 20:41:31,818 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：list indices must be integers or slices, not str
+INFO - 2026-01-27 20:42:18,558 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 20:42:18,562 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 20:42:18,563 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 20:42:18,563 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 20:42:18,563 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 20:42:18,563 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 20:42:18,563 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 20:42:18,563 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 20:42:18,567 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUxNzczOCwianRpIjoiY2ZlZmIxZTQtMWMzMi00M2RlLWFmNjgtOWVlZGJjNTUyNTRmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUxNzczOCwiZXhwIjoxNzY5NTE4NjM4fQ.jtZyYAlDCQUP1oGlZMkF7aFypnfkC_6fIj7iwpDDcJU'}}
+INFO - 2026-01-27 20:42:18,567 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"6EBFEAdDC81bfb9dAfD9d42D1b801","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 20:42:18,568 - apiutil.py:142 -[apiutil:extract_data] - json提取到的参数为：{'token': '6EBFEAdDC81bfb9dAfD9d42D1b801'}
+INFO - 2026-01-27 20:42:37,380 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 20:42:37,381 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：list indices must be integers or slices, not str
+INFO - 2026-01-27 20:43:36,334 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 20:43:36,336 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：list indices must be integers or slices, not str
+INFO - 2026-01-27 20:43:59,518 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 20:43:59,520 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：list indices must be integers or slices, not str
+INFO - 2026-01-27 20:44:19,960 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+ERROR - 2026-01-27 20:44:19,962 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：list indices must be integers or slices, not str
+INFO - 2026-01-27 20:45:43,934 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 20:46:19,477 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 20:48:34,557 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 21:01:34,757 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 21:01:34,762 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/getProductList.yaml
+INFO - 2026-01-27 21:01:34,771 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 21:01:34,772 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 21:01:34,772 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 21:01:34,772 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 21:01:34,772 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 21:01:34,772 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 21:01:34,772 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 21:01:34,776 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUxODg5NCwianRpIjoiM2JkNGM1ODktNmVkMS00ZTUxLThjY2MtMTg5M2M4MTJhYTdkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUxODg5NCwiZXhwIjoxNzY5NTE5Nzk0fQ.R13whQv-C4_QHIUYRhNHjXIfRyRB4QSQviKithIm65Y'}}
+INFO - 2026-01-27 21:01:34,776 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"dd59ffAb45fCF13dCDBD5Def2Afab","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 21:01:34,777 - apiutil.py:142 -[apiutil:extract_data] - json提取到的参数为：{'token': 'dd59ffAb45fCF13dCDBD5Def2Afab'}
+ERROR - 2026-01-27 21:01:34,780 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：'extract'
+INFO - 2026-01-27 21:03:37,617 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 21:03:37,621 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/getProductList.yaml
+INFO - 2026-01-27 21:03:37,625 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 21:03:37,626 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 21:03:37,626 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 21:03:37,626 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 21:03:37,626 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 21:03:37,626 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 21:03:37,626 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 21:03:37,630 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUxOTAxNywianRpIjoiMzVlNDhhNjktOTY2Ny00YWFkLThhOWItZWM5OWU0YzliODNkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUxOTAxNywiZXhwIjoxNzY5NTE5OTE3fQ.t282vyLvwn5BXMw-0oePMdJd4d4c8YrMSEAHx2e5LMs'}}
+INFO - 2026-01-27 21:03:37,631 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"18bdB71aD5Bccb5B95fc576D67fEe","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 21:03:37,632 - apiutil.py:142 -[apiutil:extract_data] - json提取到的参数为：{'token': '18bdB71aD5Bccb5B95fc576D67fEe'}
+INFO - 2026-01-27 21:03:37,635 - api_keys.py:60 -[api_keys:run_main] - 接口名称：商品列表
+INFO - 2026-01-27 21:03:37,635 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/coupApply/cms/goodsList
+INFO - 2026-01-27 21:03:37,636 - api_keys.py:62 -[api_keys:run_main] - 用例名称：获取商品列表
+INFO - 2026-01-27 21:03:37,636 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 21:03:37,636 - api_keys.py:64 -[api_keys:run_main] - 请求方法：get
+INFO - 2026-01-27 21:03:37,636 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 21:03:37,636 - api_keys.py:76 -[api_keys:run_main] - 请求参数：{'params': {'msgType': 'getHandsetListOfCust', 'page': 1, 'size': 20}}
+INFO - 2026-01-27 21:03:37,638 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"api_info":"today:21 max:10000 all[90=21+33+36];expires:2030-12-31","cache":0,"error_code":"0000","goodsList":[{"goodsId":"18382788819","goods_count":"233","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/bcf848aa71c6389607ae7a84b70f1543.jpeg","goods_name":"【2件套】套装秋冬新款仿獭兔毛钉珠皮草毛毛短外套加厚大衣女装","original_price":"","unit_price":"￥99.00"},{"goodsId":"33809635011","goods_count":"521","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/176019babfdecffa1d9f98f40b7e99b4.jpeg","goods_name":"好奇小森林心钻装纸尿裤M22拉拉裤L18/XL14超薄透气裤型尿不湿 1件装","original_price":"","unit_price":"￥108.00"},{"goodsId":"56996760797","goods_count":"1181","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"冻干鸡小胸整块增肥营养发腮狗狗零食新手养猫零食幼猫零食100g","original_price":"","unit_price":"￥17.80"},{"goodsId":"82193785267","goods_count":"3000+","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"【自营】ISB伊珊娜意大利水果系列宠物犬猫沐浴露除臭香波护毛素","original_price":"","unit_price":"￥650.00"},{"goodsId":"74190550836","goods_count":"1000+","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"【新品零0CM嵌入式】海尔电冰箱410L家用法式四门多门官方正品","original_price":"","unit_price":"￥5746.00"}],"reason":"","request_id":"request_id","secache":"c98b29872e8a4b28859db207944ba817","secache_date":"2026-01-27 15:32:37","secache_time":1769499157000,"translate_language":"zh-CN"}
+
+INFO - 2026-01-27 21:03:37,639 - apiutil.py:169 -[apiutil:extract_data_list] - json提取到参数：{'goodsId': ['18382788819', '33809635011', '56996760797', '82193785267', '74190550836']}
+INFO - 2026-01-27 21:49:39,261 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/getProductList.yaml
+INFO - 2026-01-27 21:49:39,265 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/ProductDetail.yaml
+ERROR - 2026-01-27 21:49:39,276 - apiutil.py:109 -[apiutil:send_specification_yaml] - 接口发生异常：'DbugTalk' object has no attribute 'get_extract_data_list'
+INFO - 2026-01-27 21:49:54,709 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/getProductList.yaml
+INFO - 2026-01-27 21:49:54,710 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/ProductDetail.yaml
+INFO - 2026-01-27 21:49:54,715 - api_keys.py:60 -[api_keys:run_main] - 接口名称：商品列表
+INFO - 2026-01-27 21:49:54,715 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/coupApply/cms/goodsList
+INFO - 2026-01-27 21:49:54,716 - api_keys.py:62 -[api_keys:run_main] - 用例名称：获取商品列表
+INFO - 2026-01-27 21:49:54,716 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 21:49:54,716 - api_keys.py:64 -[api_keys:run_main] - 请求方法：get
+INFO - 2026-01-27 21:49:54,716 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 21:49:54,716 - api_keys.py:76 -[api_keys:run_main] - 请求参数：{'params': {'msgType': 'getHandsetListOfCust', 'page': 1, 'size': 20}}
+INFO - 2026-01-27 21:49:54,719 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"api_info":"today:21 max:10000 all[90=21+33+36];expires:2030-12-31","cache":0,"error_code":"0000","goodsList":[{"goodsId":"18382788819","goods_count":"233","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/bcf848aa71c6389607ae7a84b70f1543.jpeg","goods_name":"【2件套】套装秋冬新款仿獭兔毛钉珠皮草毛毛短外套加厚大衣女装","original_price":"","unit_price":"￥99.00"},{"goodsId":"33809635011","goods_count":"521","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/176019babfdecffa1d9f98f40b7e99b4.jpeg","goods_name":"好奇小森林心钻装纸尿裤M22拉拉裤L18/XL14超薄透气裤型尿不湿 1件装","original_price":"","unit_price":"￥108.00"},{"goodsId":"56996760797","goods_count":"1181","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"冻干鸡小胸整块增肥营养发腮狗狗零食新手养猫零食幼猫零食100g","original_price":"","unit_price":"￥17.80"},{"goodsId":"82193785267","goods_count":"3000+","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"【自营】ISB伊珊娜意大利水果系列宠物犬猫沐浴露除臭香波护毛素","original_price":"","unit_price":"￥650.00"},{"goodsId":"74190550836","goods_count":"1000+","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"【新品零0CM嵌入式】海尔电冰箱410L家用法式四门多门官方正品","original_price":"","unit_price":"￥5746.00"}],"reason":"","request_id":"request_id","secache":"c98b29872e8a4b28859db207944ba817","secache_date":"2026-01-27 15:32:37","secache_time":1769499157000,"translate_language":"zh-CN"}
+
+INFO - 2026-01-27 21:49:54,720 - apiutil.py:169 -[apiutil:extract_data_list] - json提取到参数：{'goodsId': ['18382788819', '33809635011', '56996760797', '82193785267', '74190550836']}
+INFO - 2026-01-27 21:50:38,209 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/login/login.yaml
+INFO - 2026-01-27 21:50:38,213 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/getProductList.yaml
+INFO - 2026-01-27 21:50:38,214 - readyaml.py:91 -[readyaml:get_yaml_data] - 读取文件路径：C:\Users\Xie-Xixin\Desktop\python\interface_pytest\test_cases/productManger/ProductDetail.yaml
+INFO - 2026-01-27 21:50:38,220 - api_keys.py:60 -[api_keys:run_main] - 接口名称：用户登录
+INFO - 2026-01-27 21:50:38,220 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/dar/user/login
+INFO - 2026-01-27 21:50:38,220 - api_keys.py:62 -[api_keys:run_main] - 用例名称：用户名和密码正确登录验证
+INFO - 2026-01-27 21:50:38,220 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 21:50:38,221 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 21:50:38,221 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 21:50:38,221 - api_keys.py:70 -[api_keys:run_main] - 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO - 2026-01-27 21:50:38,225 - api_keys.py:30 -[api_keys:send_request] - 写入Cookie成功：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2OTUyMTgzOCwianRpIjoiMGU1ZmYwMTgtNDAwYy00ZTY2LTlhNzQtMmFhMmQzYTE5NTRmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc2OTUyMTgzOCwiZXhwIjoxNzY5NTIyNzM4fQ.pt-YtU3lYisD-C529rEX_dQ8qk6XUsN0xZ7pHs0zLZk'}}
+INFO - 2026-01-27 21:50:38,225 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"efBF71594Ac8B90c8BA46ba8B0e16","userId":"0669742845985710018"}
+
+INFO - 2026-01-27 21:50:38,226 - apiutil.py:142 -[apiutil:extract_data] - json提取到的参数为：{'token': 'efBF71594Ac8B90c8BA46ba8B0e16'}
+INFO - 2026-01-27 21:50:38,230 - api_keys.py:60 -[api_keys:run_main] - 接口名称：商品列表
+INFO - 2026-01-27 21:50:38,230 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/coupApply/cms/goodsList
+INFO - 2026-01-27 21:50:38,230 - api_keys.py:62 -[api_keys:run_main] - 用例名称：获取商品列表
+INFO - 2026-01-27 21:50:38,230 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': '${get_extract_data(product_id,1)}'}
+INFO - 2026-01-27 21:50:38,230 - api_keys.py:64 -[api_keys:run_main] - 请求方法：get
+INFO - 2026-01-27 21:50:38,231 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 21:50:38,231 - api_keys.py:76 -[api_keys:run_main] - 请求参数：{'params': {'msgType': 'getHandsetListOfCust', 'page': 1, 'size': 20}}
+INFO - 2026-01-27 21:50:38,232 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"api_info":"today:21 max:10000 all[90=21+33+36];expires:2030-12-31","cache":0,"error_code":"0000","goodsList":[{"goodsId":"18382788819","goods_count":"233","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/bcf848aa71c6389607ae7a84b70f1543.jpeg","goods_name":"【2件套】套装秋冬新款仿獭兔毛钉珠皮草毛毛短外套加厚大衣女装","original_price":"","unit_price":"￥99.00"},{"goodsId":"33809635011","goods_count":"521","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/176019babfdecffa1d9f98f40b7e99b4.jpeg","goods_name":"好奇小森林心钻装纸尿裤M22拉拉裤L18/XL14超薄透气裤型尿不湿 1件装","original_price":"","unit_price":"￥108.00"},{"goodsId":"56996760797","goods_count":"1181","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"冻干鸡小胸整块增肥营养发腮狗狗零食新手养猫零食幼猫零食100g","original_price":"","unit_price":"￥17.80"},{"goodsId":"82193785267","goods_count":"3000+","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"【自营】ISB伊珊娜意大利水果系列宠物犬猫沐浴露除臭香波护毛素","original_price":"","unit_price":"￥650.00"},{"goodsId":"74190550836","goods_count":"1000+","goods_image":"https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","goods_name":"【新品零0CM嵌入式】海尔电冰箱410L家用法式四门多门官方正品","original_price":"","unit_price":"￥5746.00"}],"reason":"","request_id":"request_id","secache":"c98b29872e8a4b28859db207944ba817","secache_date":"2026-01-27 15:32:37","secache_time":1769499157000,"translate_language":"zh-CN"}
+
+INFO - 2026-01-27 21:50:38,234 - apiutil.py:169 -[apiutil:extract_data_list] - json提取到参数：{'goodsId': ['18382788819', '33809635011', '56996760797', '82193785267', '74190550836']}
+INFO - 2026-01-27 21:50:38,248 - api_keys.py:60 -[api_keys:run_main] - 接口名称：商品详情
+INFO - 2026-01-27 21:50:38,249 - api_keys.py:61 -[api_keys:run_main] - 接口url：http://127.0.0.1:8787/coupApply/cms/productDetail
+INFO - 2026-01-27 21:50:38,249 - api_keys.py:62 -[api_keys:run_main] - 用例名称：获取商品列表
+INFO - 2026-01-27 21:50:38,249 - api_keys.py:63 -[api_keys:run_main] - 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+INFO - 2026-01-27 21:50:38,249 - api_keys.py:64 -[api_keys:run_main] - 请求方法：post
+INFO - 2026-01-27 21:50:38,249 - api_keys.py:65 -[api_keys:run_main] - 请求cookies：None
+INFO - 2026-01-27 21:50:38,249 - api_keys.py:73 -[api_keys:run_main] - 请求参数：{'json': {'pro_id': '33809635011', 'page': 1, 'size': 20}}
+INFO - 2026-01-27 21:50:38,252 - api_keys.py:31 -[api_keys:send_request] - 接口的实际返回信息:{"api_info":"today:21 max:10000 all[90=21+33+36];expires:2030-12-31","api_type":"pinduoduo","cache":0,"call_args":{"num_iid":"1620002566"},"client_ip":"106.6.39.223","error":"","error_code":"0000","execution_time":"0.437","goodsId":"56996760797","item":{"AmountOnSale":3188,"CategoryId":8484,"Coupon":null,"Delivery":{"From":null,"Info":null,"MarkInfo":null,"Postage":"快递 免运费","To":null,"extras":null},"DescUrl":null,"Detail":"<img src=\"https://img.pddpic.com/mms-material-img/2022-09-18/3f89d470-1af8-4dee-b529-6d62aa2ea3b7.png\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2019-02-15/ddf6fe7b-b536-4183-932d-69a1189a3f59.png\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/20f659b04d3e7e5851c27ff9931c96fc.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2019-11-14/4420a8c3-49ed-46d8-ab55-15e7a638ca31.jpg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/26c3e9d5cfbaf4e8f13b2bdd38f48d71.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/0aa872fa74599dad7b6aefe6b6c035c0.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/6bc959e32a30424c7a5284a37676999c.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/1fa9861a8c99c5e9e8119fd2239fef5a.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/b62cabf1d2320c5761e3f4c15203fb20.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/6f6e54376a66cbc78e16700d4c424fe1.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/2f60753dfc875a6876adc35833a69d31.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/ae0116e589d8de712f8dafd0c356cefe.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/da910c98fcc8de1b4d2d1498cd7899fd.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/140349649d8b7d08c8e88bfbbaa2f900.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/a953bae2eeb7364ef3ef2976a97d07eb.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/4da59828136c3b1308aad0aa990778a7.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-09-02/4a365b61a80e47288c8609ccd5982396.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-11-17/cd0a8a96b783a51236812ce24c59a329.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-11-17/16008ac19768d05e7dee16406ff958a1.jpeg\" style=\"width:100%;\"/><img src=\"https://t00img.yangkeduo.com/goods/images/2018-11-17/ef1d17b69ebf9449a8bb52459b168c26.jpeg\" style=\"width:100%;\"/>","FansCount":null,"ImageUrls":["https://omsproductionimg.yangkeduo.com/images/2017-12-12/bcf848aa71c6389607ae7a84b70f1543.jpeg","https://omsproductionimg.yangkeduo.com/images/2017-12-12/176019babfdecffa1d9f98f40b7e99b4.jpeg","https://omsproductionimg.yangkeduo.com/images/2017-12-12/efb5db42397550bffd3211ca6f197498.jpeg","https://omsproductionimg.yangkeduo.com/images/2017-12-12/d209ef7bcc9183c3bb8ca1dfdb108d49.jpeg","https://omsproductionimg.yangkeduo.com/images/2017-12-12/74257ab65f3f00da7a90fde9042fe640.jpeg","https://t00img.yangkeduo.com/goods/images/2019-08-17/e8fbd9cb-cc74-4caa-9380-84c46d27b008.jpg","https://t00img.yangkeduo.com/goods/images/2019-08-17/d76f515b-e375-4060-b94e-cf64f6b0964e.jpg","https://t00img.yangkeduo.com/goods/images/2019-08-17/f2f279b5-6000-4fbe-b99b-7c1cbd7884ea.jpg"],"MainImageVideo":null,"OfferId":1620002566,"OriginalPriceRangeInfos":[{"ConvertPrice":0,"Price":115,"Range":"3"}],"PriceRangeInfos":[{"ConvertPrice":0,"Price":95.4,"Range":"3"}],"ProductFeatureTuples":[{"Item1":"面料材质","Item2":"仿皮草"},{"Item1":"成分含量","Item2":"71%（含）—80%（含）"},{"Item1":"版型","Item2":"修身"},{"Item1":"领型","Item2":"圆领"},{"Item1":"衣长","Item2":"短款"},{"Item1":"是否带毛领","Item2":"不带毛领"},{"Item1":"主风格","Item2":"气质名媛"}],"ProductFeatures":{"主风格":"气质名媛","成分含量":"71%（含）—80%（含）","是否带毛领":"不带毛领","版型":"修身","衣长":"短款","面料材质":"仿皮草","领型":"圆领"},"RateCount":null,"RetryCount":0,"SellCount":"已拼4.2万件","SellerId":null,"SellerNick":null,"ShopId":"461742","ShopInfo":null,"ShopName":"果果家气质女装","ShopUrl":"http://yangkeduo.com/mall_page.html?mall_id=461742","SkuMaps":[{"AmountOnSale":73,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/062d42b525a7c786920cbb83ac772af7.jpeg","Key":"1215:1115500378;1226:119128","OriginalPrice":115,"Price":95.4,"SkuId":"57114357891","SpecAttributes":{"尺码":"S（90斤以下）","颜色":"粉色两件套(外套+裙子)"}},{"AmountOnSale":65,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/062d42b525a7c786920cbb83ac772af7.jpeg","Key":"1215:1115500378;1226:96784","OriginalPrice":115,"Price":95.4,"SkuId":"57114357892","SpecAttributes":{"尺码":"M（90-100斤）","颜色":"粉色两件套(外套+裙子)"}},{"AmountOnSale":82,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/062d42b525a7c786920cbb83ac772af7.jpeg","Key":"1215:1115500378;1226:33651","OriginalPrice":115,"Price":95.4,"SkuId":"57114357893","SpecAttributes":{"尺码":"L（100-110斤）","颜色":"粉色两件套(外套+裙子)"}},{"AmountOnSale":89,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/062d42b525a7c786920cbb83ac772af7.jpeg","Key":"1215:1115500378;1226:33652","OriginalPrice":115,"Price":95.4,"SkuId":"57114357894","SpecAttributes":{"尺码":"XL（110-120斤）","颜色":"粉色两件套(外套+裙子)"}},{"AmountOnSale":94,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/062d42b525a7c786920cbb83ac772af7.jpeg","Key":"1215:1115500378;1226:33653","OriginalPrice":115,"Price":95.4,"SkuId":"57114357895","SpecAttributes":{"尺码":"2XL（120-130斤）","颜色":"粉色两件套(外套+裙子)"}},{"AmountOnSale":105,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/062d42b525a7c786920cbb83ac772af7.jpeg","Key":"1215:1115500378;1226:33656","OriginalPrice":115,"Price":95.4,"SkuId":"57114357896","SpecAttributes":{"尺码":"3XL（130-140斤）","颜色":"粉色两件套(外套+裙子)"}},{"AmountOnSale":1051,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/415bed99d5a925123d7b7c39547205de.jpeg","Key":"1215:1115501666;1226:119128","OriginalPrice":115,"Price":95.4,"SkuId":"57114357897","SpecAttributes":{"尺码":"S（90斤以下）","颜色":"米色两件套（外套+裙子）"}},{"AmountOnSale":88,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/415bed99d5a925123d7b7c39547205de.jpeg","Key":"1215:1115501666;1226:96784","OriginalPrice":115,"Price":95.4,"SkuId":"57114357898","SpecAttributes":{"尺码":"M（90-100斤）","颜色":"米色两件套（外套+裙子）"}},{"AmountOnSale":80,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/415bed99d5a925123d7b7c39547205de.jpeg","Key":"1215:1115501666;1226:33651","OriginalPrice":115,"Price":95.4,"SkuId":"57114357899","SpecAttributes":{"尺码":"L（100-110斤）","颜色":"米色两件套（外套+裙子）"}},{"AmountOnSale":660,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/415bed99d5a925123d7b7c39547205de.jpeg","Key":"1215:1115501666;1226:33652","OriginalPrice":115,"Price":95.4,"SkuId":"57114357900","SpecAttributes":{"尺码":"XL（110-120斤）","颜色":"米色两件套（外套+裙子）"}},{"AmountOnSale":126,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/415bed99d5a925123d7b7c39547205de.jpeg","Key":"1215:1115501666;1226:33653","OriginalPrice":115,"Price":95.4,"SkuId":"57114357901","SpecAttributes":{"尺码":"2XL（120-130斤）","颜色":"米色两件套（外套+裙子）"}},{"AmountOnSale":89,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/415bed99d5a925123d7b7c39547205de.jpeg","Key":"1215:1115501666;1226:33656","OriginalPrice":115,"Price":95.4,"SkuId":"57114357902","SpecAttributes":{"尺码":"3XL（130-140斤）","颜色":"米色两件套（外套+裙子）"}},{"AmountOnSale":98,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-11-17/48b30664f0f7e526ab1b956e813f25cf.jpeg","Key":"1215:105309781;1226:119128","OriginalPrice":115,"Price":95.4,"SkuId":"103851107855","SpecAttributes":{"尺码":"S（90斤以下）","颜色":"蓝色两件套（外套+裙子）"}},{"AmountOnSale":95,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-11-17/3660b7893ca5cda1ffcea745d10b2506.jpeg","Key":"1215:105309781;1226:96784","OriginalPrice":115,"Price":95.4,"SkuId":"103851107856","SpecAttributes":{"尺码":"M（90-100斤）","颜色":"蓝色两件套（外套+裙子）"}},{"AmountOnSale":97,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-11-17/a4a5a671afbb2d8e1f4c21c0ced3bea8.jpeg","Key":"1215:105309781;1226:33651","OriginalPrice":115,"Price":95.4,"SkuId":"103851107857","SpecAttributes":{"尺码":"L（100-110斤）","颜色":"蓝色两件套（外套+裙子）"}},{"AmountOnSale":97,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-11-17/f0551176629bf81f25757c160198dba1.jpeg","Key":"1215:105309781;1226:33652","OriginalPrice":115,"Price":95.4,"SkuId":"103851107858","SpecAttributes":{"尺码":"XL（110-120斤）","颜色":"蓝色两件套（外套+裙子）"}},{"AmountOnSale":99,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-11-17/801a2e23140bfe76229f02aab0a8a5fe.jpeg","Key":"1215:105309781;1226:33653","OriginalPrice":115,"Price":95.4,"SkuId":"103851107853","SpecAttributes":{"尺码":"2XL（120-130斤）","颜色":"蓝色两件套（外套+裙子）"}},{"AmountOnSale":100,"ImageUrl":"http://t00img.yangkeduo.com/goods/images/2018-11-17/2f202934f16f0eee41257b77bf489262.jpeg","Key":"1215:105309781;1226:33656","OriginalPrice":115,"Price":95.4,"SkuId":"103851107854","SpecAttributes":{"尺码":"3XL（130-140斤）","颜色":"蓝色两件套（外套+裙子）"}}],"SkuProps":[{"IsImg":true,"Prop":"颜色","Value":[{"imageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/062d42b525a7c786920cbb83ac772af7.jpeg","name":"粉色两件套(外套+裙子)","value":"1215:1115500378"},{"imageUrl":"http://t00img.yangkeduo.com/goods/images/2018-08-28/415bed99d5a925123d7b7c39547205de.jpeg","name":"米色两件套（外套+裙子）","value":"1215:1115501666"},{"imageUrl":"http://t00img.yangkeduo.com/goods/images/2018-11-17/48b30664f0f7e526ab1b956e813f25cf.jpeg","name":"蓝色两件套（外套+裙子）","value":"1215:105309781"}]},{"IsImg":false,"Prop":"尺码","Value":[{"name":"S（90斤以下）","value":"1226:119128"},{"name":"M（90-100斤）","value":"1226:96784"},{"name":"L（100-110斤）","value":"1226:33651"},{"name":"XL（110-120斤）","value":"1226:33652"},{"name":"2XL（120-130斤）","value":"1226:33653"},{"name":"3XL（130-140斤）","value":"1226:33656"}]}],"SourceType":6,"Subject":"【2件套】套装秋冬新款仿獭兔毛钉珠皮草毛毛短外套加厚大衣女装","Tag":null,"Unit":null,"UserId":"461742","_ddf":"app","format_check":"ok"},"reason":"","request_id":"gw-4.63510267214bd","secache":"c98b29872e8a4b28859db207944ba817","secache_date":"2026-01-27 21:50:38","secache_time":1666253415,"server_memory":"0.84MB","server_time":"Beijing/2023-10-20 16:10:15","translate_engine":"baidu","translate_language":"zh-CN"}
+
+INFO - 2026-01-27 22:43:34,728 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:43:34,728 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+INFO - 2026-01-27 22:43:34,729 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:43:34,729 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+INFO - 2026-01-27 22:43:34,729 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:43:34,730 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+ERROR - 2026-01-27 22:43:34,730 - apiutil.py:113 -[apiutil:send_specification_yaml] - 接口发生异常：'testCase'
+INFO - 2026-01-27 22:44:10,890 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:44:10,890 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+INFO - 2026-01-27 22:44:10,891 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:44:10,891 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+INFO - 2026-01-27 22:44:10,891 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:44:10,892 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+ERROR - 2026-01-27 22:44:10,899 - apiutil.py:113 -[apiutil:send_specification_yaml] - 接口发生异常：eval() arg 1 must be a string, bytes or code object
+INFO - 2026-01-27 22:48:05,790 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:48:05,791 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+INFO - 2026-01-27 22:48:05,791 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:48:05,791 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+INFO - 2026-01-27 22:48:05,792 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded
+INFO - 2026-01-27 22:48:05,792 - readyaml.py:70 -[readyaml:get_extract_yaml] - 读取文件C:\Users\Xie-Xixin\Desktop\python\interface_pytest\data\extract.yaml失败：错误信息为:maximum recursion depth exceeded while calling a Python object
+ERROR - 2026-01-27 22:48:05,792 - apiutil.py:113 -[apiutil:send_specification_yaml] - 接口发生异常：eval() arg 1 must be a string, bytes or code object

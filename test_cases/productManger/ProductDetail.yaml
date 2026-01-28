@@ -1,0 +1,14 @@
+- baseInfo:
+    api_name: 商品详情 #接口名称
+    url: /coupApply/cms/productDetail #请求地址
+    method: post
+    header:
+      Content-Type : application/json;charset=UTF-8
+  testCase: #请求参数
+    - case_name: 获取商品列表
+      json: #使用表单提交要用data，json格式提交就用json方式，get方法只能使用parmas
+        pro_id: ${get_extract_data(goodsId,0)} #传0表示随机读取一个
+        page : 1
+        size : 20
+      validation: #断言
+        - contains: {'error_code': '0000'}
