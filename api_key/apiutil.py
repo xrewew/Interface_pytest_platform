@@ -1,10 +1,12 @@
 import json
 import re
+from json import JSONDecodeError
+
 import allure
 import jsonpath
 
 from api_key.api_keys import ApiKeys
-from api_key.readyaml import ReadWriteYamlData
+from api_key.readyaml import ReadWriteYamlData, get_yaml_data
 from common.DbugTalk import DbugTalk
 from conf.operationConfig import operationConfig
 from logging_conf.logging_config import logs
@@ -57,59 +59,71 @@ class BaseRequests:
         return data
 
 
-    def send_specification_yaml(self,case_info):
+    def send_specification_yaml(self,base_info,test_case):
         """
-        规范yaml接口测试数据的写法
-        :param self:
-        :param case_info: 通过get_yaml_data()方法获取的yaml测试用例的数据
+               接口请求处理基本方法
+        :param base_info: yaml文件里面的baseInfo
+        :param test_case: yaml文件里面的testCase
         :return:
         """
         cookie = None
         params_type = ['params','json','data'] #请求参数的类型列表，实现发送接口请求时只支持这三种
         try:
+        #处理基础性息
             base_url = self.conf.get_envi('host')
-            url = base_url + case_info['baseInfo']['url']
+            url = base_url + base_info['url']
             allure.attach(url,f'请求url为：{url}')
-            api_name = case_info['baseInfo']['api_name']
+            api_name = base_info['api_name']
             allure.attach(api_name,f'请求接口名称为：{api_name}')
-            method = case_info['baseInfo']['method']
+            method = base_info['method']
             allure.attach(method,f'请求方法为：{method}')
-            headers = case_info['baseInfo']['header']
+            headers = self.replace_load(base_info['header'])
             allure.attach(str(headers),f'请求头为：{headers}',allure.attachment_type.TEXT)
+        #处理cookies
+            if base_info.get('cookies') is not None:
+                cookie = eval(self.replace_load(test_case['cookies'])) #将相应的字符串类型的转化为python能够识别的类型，这里是字典
+            case_name = test_case.pop('case_name') #。pop函数为先返回case_name给case_name后返回从tc例表中删除case_name的新的列表数据
+            allure.attach(case_name,f'测试用例名称为：{case_name}',allure.attachment_type.TEXT)
+        #处理断言数据
+            val = self.replace_load(test_case.get('validation'))
+            test_case['validation'] = val
+            validation = eval(test_case.pop('validation')) #eval函数将字符串转换为字典类型
+        #处理需要从返回值中提取的数据
+            extract = test_case.pop('extract',None)
+            extract_list = test_case.pop('extract_list',None) #获取到extract_list字段的值
+        #处理接口请求参数
+            for key,value in test_case.items(): #循环testcase中的每一个key,value
+                if key in params_type: #如果key在params_type中，就说明是请求参数
+                    test_case[key] = self.replace_load(value)
+        #处理文件上传接口
+            file, files = test_case.pop('files', None), None
+            if file is not None:
+                for fk, fv in file.items():
+                    allure.attach(json.dumps(file), '导入文件')
+                    files = {fk: open(fv, mode='rb')}
+        #根据处理后的yaml数据进行发送请求
+            resp = self.apikey.run_main(name=api_name,url=url,case_name=case_name,method=method,header=headers,cookies=cookie,**test_case)
+            resp_text = resp.text #接口实际返回的值
+            status_code = resp.status_code #接口的状态码
+            allure.attach(resp_text,f'接口实际返回值信息',allure.attachment_type.TEXT)
+            allure.attach(str(resp.status_code),f'接口的状态码：{resp.status_code}',allure.attachment_type.TEXT)
+        #以下开始提取响应信息中需要提取的值
             try:
-                cookie = self.replace_load(case_info['baseInfo']['cookie'])
-            except Exception as e:
-                pass
-
-            for testcase in case_info['testCase']: #循环testcase中的每一个测试用例
-                case_name = testcase.pop('case_name') #。pop函数为先返回case_name给case_name后返回从tc例表中删除case_name的新的列表数据
-                allure.attach(case_name,f'测试用例名称为：{case_name}')
-                #处理断言数据
-                val = self.replace_load(testcase.get('validation'))
-                testcase['validation'] = val
-                validation = eval(testcase.pop('validation')) #eval函数将字符串转换为字典类型
-                #处理需要从返回值中提取的数据
-                extract = testcase.pop('extract',None)
-                extract_list = testcase.pop('extract_list',None) #获取到extract_list字段的值
-                for key,value in testcase.items(): #循环testcase中的每一个key,value
-                    if key in params_type: #如果key在params_type中，就说明是请求参数
-                        testcase[key] = self.replace_load(value)
-                #根据处理后的yaml数据进行发送请求
-                resp = self.apikey.run_main(name=api_name,url=url,case_name=case_name,method=method,header=headers,cookies=cookie,**testcase)
-                resp_text = resp.text #接口实际返回的值
-                status_code = resp.status_code #接口的状态码
-                allure.attach(resp_text,f'接口实际返回值信息',allure.attachment_type.TEXT)
-                allure.attach(str(resp.status_code),f'接口的状态码：{resp.status_code}',allure.attachment_type.TEXT)
-                #将返回的数据转化为json格式
-                resp_json = resp.json()
-                #下面开始提取返回数据中的值，接口关联的内容
+            #将返回的数据转化为字典类型
+                resp_json = json.loads(resp_text)
+            #下面开始提取返回数据中的值，接口关联的内容
                 if extract is not None:
                     self.extract_data(extract,resp_text)
                 if extract_list is not None:
                     self.extract_data_list(extract_list,resp_text)
-
-                # 处理断言
+            # 处理断言
                 self.asserts.assert_result(validation, resp_json, status_code)
+            except JSONDecodeError as js:
+                logs.error('系统异常或接口未请求！')
+                raise js
+            except Exception as e:
+                logs.error(e)
+                raise e
 
         except Exception as e:
             logs.error(f"接口发生异常：{e}")
@@ -210,7 +224,10 @@ if __name__ == '__main__':
     }
     # data = {"token": "${get_extract_data(product_id,1)}"}
     base = BaseRequests()
-    base.send_specification_yaml(case_info)
+    data = get_yaml_data('test_cases/login/login.yaml')
+    baseinfo1 = data[0][0]
+    testcase = data[0][1]
+    base.send_specification_yaml(baseinfo1,testcase)
 
     # resp_text = '{"code":200,"msg":"登录成功","token":"123456"}'
     # # 模拟多个商品返回的数据

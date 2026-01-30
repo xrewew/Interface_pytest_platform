@@ -1,0 +1,16 @@
+INFO     logging_conf.logging_config:api_keys.py:60 接口名称：订单提交
+INFO     logging_conf.logging_config:api_keys.py:61 接口url：http://127.0.0.1:8787/coupApply/cms/placeAnOrder
+INFO     logging_conf.logging_config:api_keys.py:62 用例名称：提交订单
+INFO     logging_conf.logging_config:api_keys.py:63 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+INFO     logging_conf.logging_config:api_keys.py:64 请求方法：post
+INFO     logging_conf.logging_config:api_keys.py:65 请求cookies：None
+INFO     logging_conf.logging_config:api_keys.py:73 请求参数：{'json': {'goods_id': '56996760797', 'number': 2, 'propertyChildIds': '2:9', 'inviter_id': '127839112', 'price': '128', 'freight_insurance': '0.0', 'discount_code': '002399', 'consignee_info': {'name': '张三', 'phone': 13800000000, 'address': '北京市海淀区西三环北路74号院4栋3单元1008'}}}
+INFO     logging_conf.logging_config:api_keys.py:31 接口的实际返回信息:{"crateTime":"2026-01-30 16:46:08","error":"","error_code":"0000","message":"提交订单成功","orderNumber":"157616924433789176389","translate_language":"zh-CN","userId":"1873191591787266640"}
+
+INFO     logging_conf.logging_config:apiutil.py:162 json提取到的参数为：{'orderNumber': '157616924433789176389'}
+INFO     logging_conf.logging_config:apiutil.py:162 json提取到的参数为：{'userId': '1873191591787266640'}
+INFO     logging_conf.logging_config:assertions.py:28 yaml文件预期结果：[{'eq': {'message': '提交订单成功'}}, {'eq': {'error_code': '0000'}}]
+INFO     logging_conf.logging_config:assertions.py:107 相等断言成功：接口实际结果：{'message': '提交订单成功'}，等于预期结果：{'message': '提交订单成功'}
+INFO     logging_conf.logging_config:assertions.py:107 相等断言成功：接口实际结果：{'error_code': '0000'}，等于预期结果：{'error_code': '0000'}
+INFO     logging_conf.logging_config:assertions.py:53 测试成功
+INFO     logging_conf.logging_config:conftest.py:26 -----------------接口测试结束---------------------

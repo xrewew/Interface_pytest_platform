@@ -41,7 +41,7 @@ class DbugTalk:
             }
             data = data_value[randoms]
         else:
-            data = self.read.get_extract_yaml(key,randoms)
+            return data
         return data
 
 if __name__ == '__main__':

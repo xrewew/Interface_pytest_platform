@@ -1,5 +1,6 @@
 import time
 
+import allure
 import pytest
 
 from api_key.apiutil import BaseRequests
@@ -25,10 +26,15 @@ def start_test_end():
     logs.info('-----------------接口测试结束---------------------')
 
 
-# @pytest.fixture(scope='session', autouse=True)
-# def system_login():
-#     params = get_yaml_data('test_cases/login/login.yaml')
-#     BaseRequests().send_specification_yaml(params)
+@pytest.fixture(scope='session', autouse=True)
+@allure.step('登录')
+def system_login():
+    try:
+        params = get_yaml_data('test_cases/login/login.yaml') #test_cases/login/login.yaml
+        BaseRequests().send_specification_yaml(params[0][0],params[0][1])
+    except Exception as e:
+        logs.error(f'登录接口出现异常，导致后续接口无法继续运行，请检查程序！，{e}')
+        exit()
 
 #
 # def pytest_terminal_summary(terminalreporter, exitstatus, config):
